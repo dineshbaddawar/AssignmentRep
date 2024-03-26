@@ -1,0 +1,14 @@
+<template>
+<lightning-quick-action-panel header="Activate Account">
+<lightning-input type="checkbox" label="Activate Account" onchange={handleCheckBoxChange}> </lightning-input> 
+<br/>
+<lightning-input type="text" label="Activation Summary" required onchange={getActivationValue}></lightning-input>
+<br/>       
+<div class="slds-clearfix">
+            <div class="slds-float_right">
+            <lightning-button class="slds-m-right_small" label="Cancel" onclick={closeAction} ></lightning-button>
+                <lightning-button variant="brand" label="Update"  class="slds-m-left_x-small" onclick={saveUpdateAccount}></lightning-button>
+            </div>
+        </div>
+</lightning-quick-action-panel>
+</template>
